@@ -1593,6 +1593,16 @@ background: #111;
   transition-duration: 100;
 }
 
+.grouped-window-list-item-demands-attention {
+  font-weight: normal;
+  border-image: url("panel-assets/item-attention.svg") 4;
+  transition-duration: 100;
+}
+
+.grouped-window-list-item-attention:hover {
+  border-image: url("panel-assets/item-attention-hover.svg") 4;
+}
+
 .window-list-item-box .progress,
 .grouped-window-list-item-box .progress {
   background-color: #4b7843;
@@ -1608,6 +1618,12 @@ background: #111;
   border-radius: 0;
   padding: 6px 12px 12px 12px;
   font-size: 1em;
+}
+
+/* disable background color inheritance to child widgets */
+.grouped-window-list-thumbnail-menu * {
+  background-color: transparent;
+  border: none;
 }
 
 .grouped-window-list-thumbnail-menu > StBoxLayout {
